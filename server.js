@@ -31,7 +31,7 @@ app.set("view engine", "ejs")
 app.use("/images", express.static("images"))
 
 // checking status route
-app.get("/status", (req, res) => {
+app.get("/", (req, res) => {
     return res.json({ status: "OK" })
 })
 
